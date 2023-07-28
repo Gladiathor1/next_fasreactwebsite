@@ -1,0 +1,346 @@
+.account-main {
+    padding: 20px 0 50px;
+
+    .nav-sidebar {
+        margin: 0 0 40px;
+
+        .nav-sidebar-title {
+            margin: 5px 0 10px;
+            line-height: 1.2;
+            font-size: 16px;
+            font-weight: bold;
+            color: #313131;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 8px 3px 8px 10px;
+            position: relative;
+            line-height: 1.3;
+            color: #777;
+            border-bottom: 1px solid #ddd;
+        }
+        i {
+            margin-right: 5px;
+        }
+        a{
+            color: #777;
+            text-decoration: none;
+        }
+        a.active{
+            color: #3954A5;
+            font-weight: normal;
+        }
+    }
+
+    .page-title h1{
+        font-size: 20px;
+        margin: 0 0 15px;
+        color: #3954A5;
+    }
+
+    // Dashboard content
+    .dashboard-main {
+        .welcome-msg {
+            background: #dff0d8;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            margin: 0;
+            padding: 10px;
+            p {
+                margin: 0;
+                color: #3c763d;
+            }
+            p.hello {
+                float: left;
+                margin-right: 5px;
+            }
+        }
+        .box-account {
+            margin: 30px 0;
+            .box-head {
+                margin: 0 0 10px;
+                text-align: right;
+                line-height: 1.4;
+                h2 {
+                    float: left;
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #313131;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .col2-set {
+            margin: 0 0 25px;
+            @media screen and (max-width: 470px) {
+                flex-wrap: wrap;
+                .col-1 {
+                    margin-bottom: 25px;
+                }
+            }
+            .col-1,.col-2 {
+                float: left;
+                width: 48.5%;
+                flex: unset;
+                padding: 0;
+                max-width: unset;
+                @media screen and (max-width: 470px) {
+                    width: 100%;
+                }
+            }
+        }
+        .box {
+            .box-title {
+                padding: 10px 15px;
+                border: 1px solid #ddd;
+                background-color: #f5f5f5;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    float: left;
+                    font-size: 13px;
+                    font-weight: bold;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    margin: 0;
+                    color: #313131;
+                }
+                a {
+                    float: right;
+                    line-height: 18px;
+                    font-size: 12px;
+                }
+            }
+            .box-content {
+                padding: 20px 15px;
+                font-size: 13px;
+                border: 1px solid #ddd;
+                border-top: 0;
+                border-radius: 0 0 7px 7px;
+                background-color: #fbfbfb;
+                min-height: 135px;
+                display: flex;
+                h4 {
+                    font-size: 14px;
+                    margin: 0 0 5px;
+                    line-height: 1.35;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    // Information Content
+    .account-information {
+        .form-control {
+            border: 1px solid #ced4da;
+            height: calc(1.5em + .75rem + 2px);
+            background-color: unset;
+        }
+    }
+}
+.account-table {
+    table {
+        width: 100%;
+        border: 0;
+    }
+    td {
+        padding: 15px 10px;
+    }
+    thead {
+        tr {
+            border: 1px solid #dcdcdc;
+        }
+        th {
+            font-weight: 600;
+            padding: 15px 10px;
+            color: #777;
+            white-space: nowrap;
+            vertical-align: middle;
+            font-size: 14px;
+            text-transform: uppercase;
+            background-color: #f6f6f6;
+        }
+    }
+    tbody {
+        tr {
+            border-left: 1px solid #dcdcdc;
+            border-right: 1px solid #dcdcdc;
+            background-color: #fff;
+            td {
+                border-bottom: 1px solid #dcdcdc;
+                border-right: 1px solid #dcdcdc;
+                padding: 15px 10px;
+                line-height: 1.3;
+            }
+        }
+        
+    }
+    tfoot {
+        border-bottom: 1px solid #d9dde3;
+
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 0;
+            border-right: 1px solid #dcdcdc;
+            border-left: 1px solid #dcdcdc;
+        }
+        tr.first td {
+            border-left: 1px solid #dcdcdc;
+        }
+    }
+    .nobr a {
+        display: inline-block;
+    }
+    .subtotal {
+        display: table-row;
+    }
+    
+}
+.separator {
+    margin: 0 3px;
+}
+.page-head {
+    margin-bottom: 20px;
+        h3 {
+        font-size: 20px;
+    }
+}
+a {
+    display: inline-block;
+}
+.card {
+    display: block;
+    border: 1px solid #ececec;
+    background: #fff;
+    border-top: 4px solid #3954A5;
+    padding: 35px 25px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.08);
+}
+ol,ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.addresses-list {
+    li.item {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 0 0 10px;
+    }
+    li.item.no-border {
+        border: none;
+        padding: 0;
+        margin: 0 0 10px;
+    }
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #313131;
+        line-height: 1.4;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 13px;
+    }
+    a {
+        font-weight: bold;
+        display: inline-block ;
+    }
+}
+.order-info {
+    color: #313131;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0 0 10px;
+    ul{
+        display: inline-block;
+    }
+    li {
+        margin: 0 3px;
+    }
+}
+h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 5px;
+    line-height: 1.35;
+}
+.table-caption {
+    clear: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #313131;
+    padding: 0;
+    margin: 0 0 10px;
+}
+.product-name {
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+.a-right {
+    text-align: right !important;
+}
+button.button{
+    /* overflow: visible; */
+    width: auto;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+
+    span {
+        display: block;
+        border: 0;
+        background: #3954A5;
+        padding: 0 15px;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: center;
+        white-space: nowrap;
+        color: #fff;
+        line-height: 38px;
+        border-radius: 0px;
+    }
+}
+    
+.page-title {
+    margin-bottom: 15px;
+}
+
+.no-margin {
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.grey-color {
+    color: #666666;
+}
+
+.order-print-page {
+    display: block;
+    margin: 10px;
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+}
