@@ -1,0 +1,93 @@
+export const productBySKU = (sku) => {
+  return { query: `query getProducts {
+    products(filter: { sku: { match: "${sku}" } }) {
+      items {
+        id
+        attribute_set_id
+        name
+        sku
+        stock_status
+        __typename
+        price_tiers{
+          quantity
+          discount{
+            amount_off
+            percent_off
+          }
+          final_price{
+            value
+          }
+        }
+        description{
+          html
+        }
+        image{
+          url
+        }
+        price_range{
+          minimum_price{
+            regular_price{
+              value
+              currency
+            }
+          }
+        }
+        categories{
+          id
+          name
+        }
+        ... on ConfigurableProduct{
+          configurable_options{
+            id
+            label
+            position
+            use_default
+            attribute_code
+            values {
+              value_index
+              label
+            }
+            product_id
+          }
+          variants{
+            product{
+              id
+              name
+              sku
+              price_tiers{
+                quantity
+                discount{
+                  amount_off
+                  percent_off
+                }
+                final_price{
+                  value
+                }
+              }
+              image{
+                url
+              }
+              small_image{
+                  url
+                  label
+              }
+              price_range{
+                minimum_price{
+                  regular_price{
+                    value
+                    currency
+                  }
+                }
+              }
+            }
+            attributes{
+              label
+              code
+              value_index
+            }
+          }
+        }
+      }
+    }
+  }` };
+};
